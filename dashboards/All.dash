@@ -1,0 +1,39 @@
+title: Home Dashboard
+widget_dimensions: [180, 180]
+widget_size: [1, 1]
+widget_margins: [5, 5]
+columns: 4
+rows: 21
+scalable: False
+global_parameters:
+  use_comma: 0
+  precision: 1
+  use_hass_icon: 1
+  namespace: default
+  devices:
+    media_player:
+      step: 5
+
+layout:
+  - include: widgets
+  - scroll_widget_1_1, scroll_widget_2_1, scroll_widget_3_1, scroll_widget_4_1
+  - sunrise_widget, weather_widget(2x2), weather_summary_widget
+  - sunset_widget, weather_summary_tomorrow_widget
+  - thomas_widget, dining_room_sensor_temperature, hallway_sensor_temperature, living_room_sensor_temperature
+  - # ------- Blank Row -------
+  - scroll_widget_1_2, scroll_widget_2_2, scroll_widget_3_2, scroll_widget_4_2
+  - light.bedroom, light.hallway, light.bathroom
+  - light.living_room, light.dining_room
+  -
+  - # ------- Blank Row -------
+  - scroll_widget_1_3, scroll_widget_2_3, scroll_widget_3_3, scroll_widget_4_3
+  - livingroom_tv_sonoff, livingroom_speakers_sonoff, kitchen_speakers_sonoff, bedroom_speakers_sonoff
+  - input_boolean.livingroomtv_power_status
+  - switch.sonoff_5, switch.sonoff_6, switch.sonoff_7, switch.sonoff_8
+  - # ------- Blank Row -------
+  - scroll_widget_1_4, scroll_widget_2_4, scroll_widget_3_4, scroll_widget_4_4
+  - bedroom_av(2x2), kitchen_av(2x2)
+  -
+  - livingroom_av(4x1)
+  -
+  - blank_widget

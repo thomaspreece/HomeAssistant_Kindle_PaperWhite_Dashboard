@@ -1,0 +1,197 @@
+# Status ------------------------------------------
+
+thomas_widget:
+  widget_type: sensor
+  title: Thomas
+  entity: person.thomas_preece
+
+franky_widget:
+  widget_type: sensor
+  title: Franky
+  entity: person.francesca
+
+dining_room_sensor_temperature:
+  widget_type: sensor
+  title: Dining Room
+  entity: sensor.dining_room_sensor_temperature
+
+hallway_sensor_temperature:
+  widget_type: sensor
+  title: Hallway
+  entity: sensor.hallway_sensor_temperature
+
+living_room_sensor_temperature:
+  widget_type: sensor
+  title: Living Room
+  entity: sensor.living_room_sensor_temperature
+
+weather_summary_widget:
+  widget_type: weather_summary
+  title: Today
+  entity: sensor.dark_sky_summary_0d
+
+weather_summary_tomorrow_widget:
+  widget_type: weather_summary
+  title: Tomorrow
+  entity: sensor.dark_sky_summary_1d
+
+weather_widget:
+  widget_type: weather
+  title: Next Hour
+  show_forecast: 0
+  prefer_icons: 1
+  forecast_title: Tomorrow Overview
+  sensors:
+    icon: sensor.dark_sky_icon
+    temperature: sensor.dark_sky_temperature_0h
+    apparent_temperature: sensor.dark_sky_apparent_temperature_0h
+    humidity: sensor.dark_sky_humidity_0h
+    precip_probability: sensor.dark_sky_precip_probability_0h
+    precip_intensity: sensor.dark_sky_precip_intensity_0h
+    precip_type: sensor.dark_sky_precip_0h
+    wind_speed: sensor.dark_sky_wind_speed_0h
+    wind_bearing: sensor.dark_sky_wind_bearing_0h
+    forecast_icon: sensor.dark_sky_icon_1d
+    forecast_temperature_min: sensor.dark_sky_daily_low_temperature_1d
+    forecast_temperature_max: sensor.dark_sky_daily_high_temperature_1d
+    forecast_precip_probability: sensor.dark_sky_precip_probability_1d
+    forecast_precip_type: sensor.dark_sky_precip_1d
+
+sunrise_widget:
+  widget_type: sensor
+  title: Sunrise
+  entity: sensor.dark_sky_sunrise_0d
+
+sunset_widget:
+  widget_type: sensor
+  title: Sunset
+  entity: sensor.dark_sky_sunset_0d
+
+# Switches ------------------------------------------
+
+livingroom_tv_sonoff:
+  widget_type: switch
+  title: LivingRoom TV
+  entity: switch.livingroom_tv_sonoff
+
+livingroom_speakers_sonoff:
+  widget_type: switch
+  title: LivingRoom Speakers
+  entity: switch.livingroom_speakers_sonoff
+
+kitchen_speakers_sonoff:
+  widget_type: switch
+  title: Kitchen Speakers
+  entity: switch.kitchen_speakers_sonoff
+
+bedroom_speakers_sonoff:
+  widget_type: switch
+  title: Bedroom Speakers
+  entity: switch.bedroom_speakers_sonoff
+
+# AV --------------------------------------
+
+bedroom_av:
+  widget_type: media_player
+  title: "Bedroom"
+  entity: media_player.bedroom
+
+kitchen_av:
+  widget_type: media_player
+  title: "Kitchen"
+  entity: media_player.kitchen
+
+livingroom_av:
+  widget_type: media_player
+  title: "TV"
+  entity: media_player.livingroom_2
+
+# Scroll Navigation --------------------------------------
+
+scroll_widget_1_1:
+  widget_type: javascript
+  title: Status
+  title2: Active
+  command: "window.scrollTo(0,0);setTimeout(function(){document.getElementsByTagName(\"body\")[0].classList.add(\"invert\"),setTimeout(function(){document.getElementsByTagName(\"body\")[0].classList.remove(\"invert\")},500)},500)"
+
+scroll_widget_2_1:
+  widget_type: javascript
+  title: Lights
+  command: "window.scrollTo(0,185*5);setTimeout(function(){document.getElementsByTagName(\"body\")[0].classList.add(\"invert\"),setTimeout(function(){document.getElementsByTagName(\"body\")[0].classList.remove(\"invert\")},500)},500)"
+
+scroll_widget_3_1:
+  widget_type: javascript
+  title: Switches
+  command: "window.scrollTo(0,185*10);setTimeout(function(){document.getElementsByTagName(\"body\")[0].classList.add(\"invert\"),setTimeout(function(){document.getElementsByTagName(\"body\")[0].classList.remove(\"invert\")},500)},500)"
+
+scroll_widget_4_1:
+  widget_type: javascript
+  title: AV
+  command: "window.scrollTo(0,185*15);setTimeout(function(){document.getElementsByTagName(\"body\")[0].classList.add(\"invert\"),setTimeout(function(){document.getElementsByTagName(\"body\")[0].classList.remove(\"invert\")},500)},500)"
+
+scroll_widget_1_2:
+  widget_type: javascript
+  title: Status
+  command: "window.scrollTo(0,0);setTimeout(function(){document.getElementsByTagName(\"body\")[0].classList.add(\"invert\"),setTimeout(function(){document.getElementsByTagName(\"body\")[0].classList.remove(\"invert\")},500)},500)"
+
+scroll_widget_2_2:
+  widget_type: javascript
+  title: Lights
+  title2: Active
+  command: "window.scrollTo(0,185*5);setTimeout(function(){document.getElementsByTagName(\"body\")[0].classList.add(\"invert\"),setTimeout(function(){document.getElementsByTagName(\"body\")[0].classList.remove(\"invert\")},500)},500)"
+
+scroll_widget_3_2:
+  widget_type: javascript
+  title: Switches
+  command: "window.scrollTo(0,185*10);setTimeout(function(){document.getElementsByTagName(\"body\")[0].classList.add(\"invert\"),setTimeout(function(){document.getElementsByTagName(\"body\")[0].classList.remove(\"invert\")},500)},500)"
+
+scroll_widget_4_2:
+  widget_type: javascript
+  title: AV
+  command: "window.scrollTo(0,185*15);setTimeout(function(){document.getElementsByTagName(\"body\")[0].classList.add(\"invert\"),setTimeout(function(){document.getElementsByTagName(\"body\")[0].classList.remove(\"invert\")},500)},500)"
+
+scroll_widget_1_3:
+  widget_type: javascript
+  title: Status
+  command: "window.scrollTo(0,0);setTimeout(function(){document.getElementsByTagName(\"body\")[0].classList.add(\"invert\"),setTimeout(function(){document.getElementsByTagName(\"body\")[0].classList.remove(\"invert\")},500)},500)"
+
+scroll_widget_2_3:
+  widget_type: javascript
+  title: Lights
+  command: "window.scrollTo(0,185*5);setTimeout(function(){document.getElementsByTagName(\"body\")[0].classList.add(\"invert\"),setTimeout(function(){document.getElementsByTagName(\"body\")[0].classList.remove(\"invert\")},500)},500)"
+
+scroll_widget_3_3:
+  widget_type: javascript
+  title: Switches
+  title2: Active
+  command: "window.scrollTo(0,185*10);setTimeout(function(){document.getElementsByTagName(\"body\")[0].classList.add(\"invert\"),setTimeout(function(){document.getElementsByTagName(\"body\")[0].classList.remove(\"invert\")},500)},500)"
+
+scroll_widget_4_3:
+  widget_type: javascript
+  title: AV
+  command: "window.scrollTo(0,185*15);setTimeout(function(){document.getElementsByTagName(\"body\")[0].classList.add(\"invert\"),setTimeout(function(){document.getElementsByTagName(\"body\")[0].classList.remove(\"invert\")},500)},500)"
+
+scroll_widget_1_4:
+  widget_type: javascript
+  title: Status
+  command: "window.scrollTo(0,0);setTimeout(function(){document.getElementsByTagName(\"body\")[0].classList.add(\"invert\"),setTimeout(function(){document.getElementsByTagName(\"body\")[0].classList.remove(\"invert\")},500)},500)"
+
+scroll_widget_2_4:
+  widget_type: javascript
+  title: Lights
+  command: "window.scrollTo(0,185*5);setTimeout(function(){document.getElementsByTagName(\"body\")[0].classList.add(\"invert\"),setTimeout(function(){document.getElementsByTagName(\"body\")[0].classList.remove(\"invert\")},500)},500)"
+
+scroll_widget_3_4:
+  widget_type: javascript
+  title: Switches
+  command: "window.scrollTo(0,185*10);setTimeout(function(){document.getElementsByTagName(\"body\")[0].classList.add(\"invert\"),setTimeout(function(){document.getElementsByTagName(\"body\")[0].classList.remove(\"invert\")},500)},500)"
+
+scroll_widget_4_4:
+  widget_type: javascript
+  title: AV
+  title2: Active
+  command: "window.scrollTo(0,185*15);setTimeout(function(){document.getElementsByTagName(\"body\")[0].classList.add(\"invert\"),setTimeout(function(){document.getElementsByTagName(\"body\")[0].classList.remove(\"invert\")},500)},500)"
+
+blank_widget:
+  widget_type: label
+  title: "Test"

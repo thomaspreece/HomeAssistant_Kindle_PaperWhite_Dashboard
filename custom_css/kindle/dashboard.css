@@ -1,0 +1,281 @@
+.linksContainer {
+  width:735px;
+  margin:auto;
+}
+
+.links {
+  width:180px;
+  display:inline-block;
+  text-align:center;
+  height:180px;
+  margin-right:5px;
+  background-color:white;
+  border-radius:5px;
+  margin-top:5px;
+}
+
+.widget-basejavascript-default-navigate-status,
+.widget-basejavascript-default-navigate-lights,
+.widget-basejavascript-default-navigate-switches,
+.widget-basejavascript-default-reload-widget {
+  display: none !important;
+}
+
+.widget-basedisplay-default-sunrise-widget .valueunit h2 {
+  font-size: 2em !important;
+}
+
+.widget-basedisplay-default-sunset-widget .valueunit h2 {
+  font-size: 2em !important;
+}
+
+.widget-basedisplay-default-thomas-widget .valueunit h2 {
+  font-size: 250% !important;
+}
+
+.widget-basedisplay-default-franky-widget .valueunit h2 {
+  font-size: 250% !important;
+}
+
+.widget-basedisplay-default-weather-summary-widget .valueunit {
+  position: absolute;
+  top: 1.5em;
+}
+
+.widget-basedisplay-default-weather-summary-widget .valueunit h2 {
+  color: black !important;
+  font-size: 5em !important;
+}
+
+.widget-basedisplay-default-weather-summary-tomorrow-widget .valueunit {
+  position: absolute;
+  top: 1.5em;
+}
+
+.widget-basedisplay-default-weather-summary-tomorrow-widget .valueunit h2 {
+  color: black !important;
+  font-size: 5em !important;
+}
+
+
+.linksTitle {
+  color:#000;
+  font-size:1.5em;
+  margin-bottom:1em;
+  font-weight: bold;
+}
+
+.invert {
+  filter: invert(100%);
+  background-color: white;
+}
+
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  background-color: #222;
+  font-size: 15px;
+  color: #fff;
+  padding: 0;
+  line-height: 1;
+  font-family: 'Helvetica Neue', 'Helvetica', 'Open Sans', 'Arial'
+}
+
+b, strong {
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+  vertical-align: middle;
+}
+
+img, object {
+  max-width: 100%;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;}
+
+iframe {
+  max-width: 100%;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+
+td {
+  vertical-align: middle;
+}
+
+ul, ol {
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, p {
+  padding: 0;
+  margin: 0;
+}
+h1 {
+  margin-bottom: 6px;
+  text-align: center;
+  font-size: 100%;
+  font-weight: 200;
+}
+h2 {
+  font-size: 300%;
+  font-weight: 400;
+  color: #fff;
+}
+h3 {
+  font-size: 125%;
+  font-weight: 300;
+  color: #fff;
+}
+
+input {
+  background-color: #444;
+  border: none;
+}
+
+.dashboard_main {
+	margin: 0px auto;
+}
+
+.gridster {
+  margin: 0px auto;
+}
+
+.icon-background {
+  pointer-events: none;
+  width: 100%!important;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0.1;
+  font-size: 1375%;
+  text-align: center;
+  margin-top: 82px;
+}
+
+.list-nostyle {
+  list-style: none;
+}
+
+.gridster ul {
+  list-style: none;
+}
+
+.gs-w {
+  width: 100%;
+  display: table;
+  cursor: pointer;
+  z-index: auto !important;
+}
+
+.iframe {
+  position: relative;
+  overflow: hidden;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;}
+
+.widget {
+  padding: 0px 0px;
+  text-align: center;
+  width: 100%;
+  display: table-cell;
+  vertical-align: middle;
+  background-color: white;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.icon {
+  top: 55px !important;
+  font-size: 5em;
+}
+
+#container {
+  padding-top: 0px;
+}
+
+.modalDialog {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 9999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+}
+
+.modalDialogOpen {
+	opacity:0.95;
+	pointer-events: auto;
+}
+
+.modalDialogClose {
+	opacity:0;
+	pointer-events: none;
+}
+
+.modalDialog > div {
+	width: 275px;
+	position: relative;
+	margin: 3% auto;
+	padding: 5px 20px 13px 20px;
+	border-radius: 10px;
+}
+
+.modalDialogCloseButton {
+	line-height: 50px;
+	position: absolute;
+	right: -25px;
+	text-align: center;
+	top: -20px;
+	width: 50px;
+	text-decoration: none;
+	font-weight: bold;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+}
+
+.modalDialogCloseButton:hover { background: #444; }
+
+.widget-baseweather-default-weather-widget .title {
+  font-size: 2em;
+}
+
+.widget-baseweather-default-weather-widget div .secondary-detail {
+  font-size: 1.8em;
+}
+
+.widget-baseweather-default-weather-widget div div .secondary-detail {
+  margin-top: 0.3em;
+  font-size: 2.5em !important;
+  color: black;
+}
